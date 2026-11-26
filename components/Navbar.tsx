@@ -128,7 +128,7 @@ export default function Navbar() {
               className={`inline-flex items-center justify-center rounded-xl p-2 transition cursor-pointer ${
                 scrolled || mobileMenuOpen
                   ? "text-slate-900 hover:bg-slate-100"
-                  : "text-white hover:bg-white/15 backdrop-blur-sm"
+                  : "text-white hover:bg-white/15"
               }`}
               aria-expanded={mobileMenuOpen}
               aria-label={mobileMenuOpen ? "Close menu" : "Open menu"}
@@ -201,7 +201,7 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div
           onClick={() => setMobileMenuOpen(false)}
-          className="fixed inset-0 z-40 bg-slate-950/40 backdrop-blur-xs md:hidden"
+          className="fixed inset-0 z-40 bg-slate-950/40 md:hidden"
         />
       )}
     </>

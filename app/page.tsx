@@ -12,6 +12,9 @@ import {
   LuNetwork,
 } from "react-icons/lu";
 import PreFooterCTA from "@/components/PreFooterCTA";
+import TypingHeroText from "@/components/TypingHeroText";
+import CounterNumber from "@/components/CounterNumber";
+import SectionReveal from "@/components/SectionReveal";
 
 export const metadata: Metadata = {
   title: "First Class Holdings Limited | Delivering Excellence Across Africa",
@@ -126,8 +129,19 @@ export default function Home() {
               <span className="text-xs font-mono uppercase tracking-widest text-blue-300 font-semibold">
                 First Class Holdings Limited
               </span>
-              <h1 className="mt-3 text-3xl sm:text-5xl lg:text-5xl font-bold tracking-tight text-white leading-[1.1]">
-                Delivering innovative, high-quality solutions across multiple sectors.
+              <h1 className="mt-3 text-3xl sm:text-5xl lg:text-5xl font-bold tracking-tight text-white leading-[1.15]">
+                Delivering innovative, high-quality solutions across{" "}
+                <span className="text-blue-400 block sm:inline">
+                  <TypingHeroText
+                    phrases={[
+                      "multiple sectors.",
+                      "engineering & infrastructure.",
+                      "enterprise networking.",
+                      "surveillance systems.",
+                      "custom software solutions.",
+                    ]}
+                  />
+                </span>
               </h1>
               <p className="mt-5 max-w-xl text-base sm:text-lg text-white/90 leading-relaxed font-medium">
                 Building value, empowering communities, and driving Africa&apos;s future.
@@ -230,6 +244,7 @@ export default function Home() {
       {/* ── 2. ABOUT US: WHO WE ARE ── */}
       <section className="bg-white py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionReveal>
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-center">
 
             {/* Left Column: Narrative (Exact User Text) */}
@@ -272,13 +287,17 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 divide-x divide-slate-200 pt-5 border-t border-slate-200">
                 <div className="pr-4">
-                  <p className="text-3xl sm:text-4xl font-bold font-mono text-slate-900">10+</p>
+                  <p className="text-3xl sm:text-4xl font-bold font-mono text-slate-900">
+                    <CounterNumber target={10} suffix="+" duration={1600} />
+                  </p>
                   <p className="text-xs font-mono text-slate-500 uppercase tracking-wider mt-1">
                     Years of Execution
                   </p>
                 </div>
                 <div className="pl-6">
-                  <p className="text-3xl sm:text-4xl font-bold font-mono text-slate-900">90+</p>
+                  <p className="text-3xl sm:text-4xl font-bold font-mono text-slate-900">
+                    <CounterNumber target={90} suffix="+" duration={1800} />
+                  </p>
                   <p className="text-xs font-mono text-slate-500 uppercase tracking-wider mt-1">
                     Projects Delivered
                   </p>
@@ -287,12 +306,14 @@ export default function Home() {
             </div>
 
           </div>
+          </SectionReveal>
         </div>
       </section>
 
       {/* ── 3. WHAT WE OFFER: OUR KEY SERVICES ── */}
       <section className="border-t border-slate-200 bg-slate-50 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionReveal>
 
           {/* Section Header */}
           <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 mb-14 pb-8 border-b border-slate-200">
@@ -350,12 +371,14 @@ export default function Home() {
             })}
           </div>
 
+          </SectionReveal>
         </div>
       </section>
 
       {/* ── 4. WHY CHOOSE US & CORE VALUES ── */}
       <section className="bg-white py-20 sm:py-28 border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <SectionReveal>
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-12 lg:gap-16 items-start">
 
             {/* Left Narrative & Quote Callout (Exact User Text) */}
@@ -414,6 +437,7 @@ export default function Home() {
             </div>
 
           </div>
+          </SectionReveal>
         </div>
       </section>
 

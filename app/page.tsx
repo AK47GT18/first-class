@@ -109,7 +109,7 @@ export default function Home() {
 
       {/* ── 1. HERO — Full-bleed landscape ── */}
       <section
-        className="relative w-full min-h-[88vh] sm:min-h-[92vh] bg-slate-950 flex flex-col justify-end pt-28 pb-14 sm:pb-20 text-white overflow-hidden"
+        className="relative w-full min-h-[96vh] sm:min-h-screen lg:min-h-[105vh] bg-slate-950 flex flex-col justify-end pt-36 sm:pt-44 pb-20 sm:pb-28 lg:pb-32 text-white overflow-hidden"
         style={{
           backgroundImage: "url('/images/hero-home.jpg')",
           backgroundSize: "cover",

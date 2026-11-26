@@ -252,13 +252,14 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
             {/* Left Image */}
             <div className="lg:col-span-5 relative">
-              <div className="relative aspect-square w-full overflow-hidden bg-slate-100 border border-slate-200">
+              <div className="relative aspect-square w-full min-h-[340px] sm:min-h-[420px] overflow-hidden bg-slate-100 border border-slate-200">
                 <Image
-                  src="/images/core-values.jpg"
+                  src="/images/core-values-unity.jpg"
                   alt="First Class Holdings Core Values — Unity, Integrity, and Shared Purpose"
-                  fill
+                  width={800}
+                  height={800}
                   unoptimized
-                  className="object-cover object-center"
+                  className="w-full h-full object-cover object-center"
                   priority
                 />
               </div>

@@ -117,17 +117,29 @@ export default function Footer() {
 
       {/* ── Bottom Bar ── */}
       <div className="border-t border-slate-200">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-slate-500">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-xs sm:text-sm text-slate-500">
           <p className="font-mono text-xs sm:text-sm">
             © 2026 First Class Holdings Limited. All rights reserved.
           </p>
-          <div className="flex items-center gap-5 text-xs sm:text-sm">
-            <Link href="/about" className="hover:text-slate-900 transition-colors">
+          <div className="flex flex-wrap items-center gap-4 sm:gap-6 text-xs sm:text-sm">
+            <Link href="/privacy" className="hover:text-slate-900 transition-colors">
               Privacy Policy
             </Link>
-            <Link href="/about" className="hover:text-slate-900 transition-colors">
-              Terms of Service
+            <Link href="/terms" className="hover:text-slate-900 transition-colors">
+              Terms &amp; Conditions
             </Link>
+            <span className="text-slate-300">|</span>
+            <span>
+              Developed by{" "}
+              <a
+                href="https://goldenhour265.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-medium text-slate-700 hover:text-blue-600 transition-colors underline decoration-slate-300 underline-offset-4 hover:decoration-blue-600"
+              >
+                Golden Hour
+              </a>
+            </span>
             <span className="text-slate-300">|</span>
             <span className="font-mono text-slate-500">Lilongwe, Malawi</span>
           </div>

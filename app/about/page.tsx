@@ -165,16 +165,17 @@ export default function AboutPage() {
             <div className="lg:col-span-5">
               <div className="relative aspect-[3/2] w-full overflow-hidden bg-slate-100 border border-slate-200">
                 <Image
-                  src="/images/corp-1.jpg"
-                  alt="First Class Holdings Professional Business Team"
+                  src="/images/company-overview.webp"
+                  alt="First Class Holdings Limited Company Overview"
                   fill
+                  unoptimized
                   sizes="(max-width: 1024px) 100vw, 440px"
-                  className="object-cover object-top"
+                  className="object-cover object-center"
                   priority
                 />
               </div>
               <div className="mt-3 flex items-center justify-between text-xs font-mono text-slate-500">
-                <span>Professional business team</span>
+                <span>Company Overview</span>
                 <span className="text-blue-600 font-semibold uppercase tracking-wider">Direction</span>
               </div>
             </div>
